@@ -5,4 +5,9 @@
 <p><h4>Day3</h4> <br>So i started the fundamentals 2 of the grasshopper javascript and i learned about .length , and methods like include and replace and also looked at variable scopes. learned about local and global variables.</p>
 <p><h4>Day 4</h4><br> learned a out ternary operators</p>
 <p><h4>Day 5</h4><br> console.log and functions
-<p><h4>Day 6</h4><br> so i learn about the push pop filter foreach slice  spread operator  and also learned about helper functions parameters and arguments</p>
+<p><h4>Day 6</h4><br> so i learn about the push pop filter foreach slice  spread operator  and also learned about helper functions parameters and arguments ONE COMPILER</p>
+<p><h4>day 7</h4> learned more on functions and indexing</p>
+<p><h4>day 8</h4>
+learning dom manipulation in w3schools. dont have data on my pc so cant connect to frasshopper
+</p>
+<p><h4>day 9</h4></p>
