@@ -8,6 +8,6 @@
 <p><h4>Day 6</h4><br> so i learn about the push pop filter foreach slice  spread operator  and also learned about helper functions parameters and arguments ONE COMPILER</p>
 <p><h4>day 7</h4> learned more on functions and indexing</p>
 <p><h4>day 8</h4>
-learning dom manipulation in w3schools. dont have data on my pc so cant connect to frasshopper
+learning dom manipulation on w3schools. dont have data on my pc so cant connect to frasshopper
 </p>
-<p><h4>day 9</h4></p>
+<p><h4>day 9</h4>learned about computational thinking, while loops</p>
