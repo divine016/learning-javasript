@@ -1,8 +1,8 @@
 //with DOM javascript gets the information it needs to create a dynamic html
-//it is a neutral interface used to dynamically access the web and uodate content.
+//it is a neutral interface used to dynamically access the web and update content.
 //there are 3 types that is XML, HTML and  CORE DOM.
-//html dom is a standard on how to get add change and delete html elemnts.
-//aproperty is a value that you can get or set and a method is an action you can do.
+//html dom is a standard on how to get add change and delete html elements.
+//a property is a value that you can get or set and a method is an action you can do.
 <html>
     <body>
         <p id = "demo"></p>
