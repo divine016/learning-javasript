@@ -11,3 +11,5 @@
 learning dom manipulation on w3schools. dont have data on my pc so cant connect to frasshopper
 </p>
 <p><h4>day 9</h4>learned about computational thinking, while loops</p>
+<p><h4>Day 10</h4> I wrote different functions that perform differennt stuff </p>
+<p><h4>Day 11</h4> I was able to solve one of google coding interview but i didnt quite understand perts of the code</p>
