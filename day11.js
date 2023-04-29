@@ -91,3 +91,50 @@ function longestMatch(string, dictionary, ___) {
     }
     return longestWord(arr, ___);
   };
+
+
+  //array methods
+  let cart = ['flour','milk','milk','eggs']
+  let lastIndex = cart.lastIndexOf('milk');
+  let index = cart.indexOf('milk')
+console.log('The extra item is at index: ' + index);
+
+//splice method
+let shirt sizes = ['S', 'M', 'L', 'XXL']
+let startPoint = 1;
+let itemsToReplace = 2edit;
+let newItem = 'XL';
+console.log('old: ' + shirtSizes);
+shirtSizes.splice(startPoint, itemsToReplace, newItem);
+console.log('new: ' + shirtSizes);
+
+//arrow functions
+let multiplyByTen = (number) =>{
+    return number*10;
+}
+console.log(multiplyByTen(8));
+
+//map method
+let array = ['ha', 'yo'];
+array = array.map((item) =>{
+  return item + item ; //takes the first element in the array and concatinate it
+});
+console.log(array)
+
+//.reduce method
+let hours = [8,8,6,0,8,8,12]
+let totalHours = hours.reduce((sum, today, ___) => {
+  return sum + today;
+}, 0);
+console.log('Total Hours: ' + totalHours);
+let prices = [4,8,15,16,23,42]
+let totalCost = prices.reduce((sum, price, ___) => {
+  return sum + price;
+}, 0);
+console.log('Total Cost: ' + totalCost);
+
+let numbers = [1, 2, 3]
+let result = numbers.reduce((sum, number) => {
+    return sum + number;
+}, 0)
+console.log(result);
