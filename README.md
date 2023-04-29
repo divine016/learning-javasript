@@ -12,4 +12,17 @@ learning dom manipulation on w3schools. dont have data on my pc so cant connect 
 </p>
 <p><h4>day 9</h4>learned about computational thinking, while loops</p>
 <p><h4>Day 10</h4> I wrote different functions that perform differennt stuff </p>
-<p><h4>Day 11</h4> I was able to solve one of google coding interview but i didnt quite understand perts of the code</p>
+<p><h4>Day 11</h4> I was able to solve one of google coding interview but i didn't quite understand parts of the code.  <br>
+<b>indexOf</b> is used to find the index of the argument passed to the method.  <br> LastIndexOf works like indexOf just that it starts searching from the last element i the array. if ak element is not found the method returns a -1.<br>
+<b>shift</b> method remove the first element in an array and its similar to .pop method  <br>
+<b>unshift</b> method adds element to the start of an array works like push <br>
+<b>.reverse</b> is used to reverse a string  <br>
+<b>the splice method is used to replace elements in an array at a certain position in the array. it takes 3 parameters. the start position end position and the elements is going to rplace at the specified position.</b>
+<b>.join method</b> it is used to combine elements of an array into  string. it takes parameters and adds the parameter as it combines the elemts of the array. if no argument is passed it automatically adds a comma(',') <br>
+<b>.map</b> it take elements and replace them. <br>
+<b>.reduce</b>.reduce() uses an array to calculate a single value, for example the sum.
+.reduce() uses 2 arguments: a callback function, and a starting value. The callback also uses 2 parameters: the total value so far, and the current value.
+</p>
+<p><h4>Day 12</h4> so learned about svg, event handlers
+</p>
+<p><h4>Day13</h4> learned more on animations. how to include loops so as to make complex animation. <br> Also learned about debugging code and learned about the different types of errors. syntasx arithmetic and logic errors. learned anout the try...catch statements</p>
