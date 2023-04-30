@@ -26,3 +26,5 @@ learning dom manipulation on w3schools. dont have data on my pc so cant connect 
 <p><h4>Day 12</h4> so learned about svg, event handlers
 </p>
 <p><h4>Day13</h4> learned more on animations. how to include loops so as to make complex animation. <br> Also learned about debugging code and learned about the different types of errors. syntasx arithmetic and logic errors. learned anout the try...catch statements</p>
+<p><h4>day 14</h4> getElementById is used to select a specific id and returns the element matching the id. 
+.textContent is used to change the text of a specific id</p>
