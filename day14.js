@@ -19,10 +19,28 @@ button2.addEventListener('click', () =>{
 let pic1 = '../../static/images/poolPup.jpg';
 let pic2 = '../../static/images/giraffe.jpg';
 let img = document.getElementById('pic');
-
+//creating a new element
+let newParagraph = document.createElement('p');
+newParagraph.textContent = "hello"
+console.log(newParagraph.textContent);
+//using arrow functions and event listeners.
 button1.addEventListener('click', ()=>{
     img.src = pic1;
 })
 button2.addEventListener('click', ()=>{
     img.src = pic2;
 })
+//appendChild method
+let paragraph = document.createElement('p');
+document.body.appendChild(paragraph);
+//<boby><p></p><body>
+
+//working to add a picture.
+let picture = document.createElement('img');
+picture.src = '../../static/images/sfDog.jpg'
+let text1 = document.createElement('p');
+text1.textContent = 'i am  a good boy'
+let text2 = document.createElement('p')
+text2.textContent = 'i like my chew toy';
+document.body.appendChild(picture);
+document.body.appendChild(text1);
