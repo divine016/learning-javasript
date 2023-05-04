@@ -27,4 +27,9 @@ learning dom manipulation on w3schools. dont have data on my pc so cant connect 
 </p>
 <p><h4>Day13</h4> learned more on animations. how to include loops so as to make complex animation. <br> Also learned about debugging code and learned about the different types of errors. syntasx arithmetic and logic errors. learned anout the try...catch statements</p>
 <p><h4>day 14</h4> getElementById is used to select a specific id and returns the element matching the id. 
-.textContent is used to change the text of a specific id.  the appendChild method is used to add an html elemnt as a  child of another element.</p>
+.textContent is used to change the text of a specific id.  the appendChild method is used to add an html element as a  child of another element.</p>
+<p><h4>Day 15</h4>I continued to learn how to get element fron html using javascript and i also leaarned about the appendChild element. and also about the createElement ptoperty.
+document.createElelement('') is used to create a new element then you can use the appendChild so as to append the element in the body.
+also learned about the addEventListenner. it takes two parameter the taction to perform and also the event.</p>
+<p><h4>day 16</h4> so yesterday I went to the css battle page and a friend of mine was teaching me how to solve redo some fun drawings using css and html. </p>
+<p><h4>Day 17</h4>learned about automation with appScripts. https://www.google.com/script/start/</p>
