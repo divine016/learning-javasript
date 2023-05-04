@@ -18,3 +18,15 @@ document.body.appendChild(dogImg);
 let dogButton = document.createElement('button');
 dogButton.textContent = 'halowa';
 document.body.appendChild(dogButton)
+
+//creatind buttons usig for loops.
+import { pictures } from 'animalPics.data';
+
+for (let picture of pictures) {
+    let img = document.createElement('img');
+    img.src = picture;
+    document.body.appendChild(img);
+    let button = document.createElement('button')
+    button.textContent = "submit"
+    document.body.appendChild(button);
+}

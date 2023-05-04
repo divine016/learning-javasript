@@ -1,11 +1,11 @@
-//a function that changes the color of a circle when it is beign clicked on
+//a function that changes the color of a circle when it is being clicked on
 circle.attr('fill','black');
 function changeColor(){
     circle.attr('fill', 'white')
 }
 circle.on('click', changeColor)
 
-//a function that takes an parameter color and when the function is calles it draws a shape with the color being passed into the function when called 
+//a function that takes an parameter color and when the function is calls it draws a shape with the color being passed into the function when called 
 function drawSquare(color, ___) {
     square.attr('width', 30).attr('height', 30).attr('x', 30).attr('y', 0).attr('fill', color);
   };
