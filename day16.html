@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+         background:#4F77FF;
+      }
+        .con{
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+          width:100%;
+          height:100%;
+          gap:70px;
+      }
+        .circle{
+          background:white;
+          border-radius:50%;
+          height:80px;
+          width:80px;
+          z-index:1;
+        }
+       .circle::after{
+         content:'';
+         position:absolute;
+         background:#4F77FF;
+         width: 80px;
+         height:75px;
+         z-index:-99;
+         margin-top:40px;
+         border-radius:50%;
+       }
+        .traingle{
+          z-index:3;
+          background:#1038BF;
+          height:300px;
+          width:300px;
+          margin-bottom:-250px;
+          transform:rotateZ(45deg);
+          bottom: 0px;
+        }
+      </style>
+      
+  </head>
+  <body>
+    <div class='con'>
+      <div class='circle'></div>
+      <div class='traingle'></div>
+    </div>
+  </body>
+</html>
