@@ -33,3 +33,13 @@ document.createElelement('') is used to create a new element then you can use th
 also learned about the addEventListenner. it takes two parameter the taction to perform and also the event.</p>
 <p><h4>day 16</h4> so yesterday I went to the css battle page and a friend of mine was teaching me how to solve redo some fun drawings using css and html. </p>
 <p><h4>Day 17</h4>learned about automation with appScripts. https://www.google.com/script/start/</p>
+<p><h4>Day 18</h4> so for day 18 i worked on an old project which i had build already and im trying to make it more dynamic.</p>
+<p><h4>Day 19</h4> still worked on the project.</p>
+<p><h4>Day 20</h4>i started back with my freecodecamp course so i learned about functional programming mutations and also the outcome is known as mutation</p>
+<p><h4>Dat 21</h4>Another principle of functional programming is to always declare your dependencies explicitly. This means if a function depends on a variable or object being present, then pass that variable or object directly into the function as an argument.
+
+There are several good consequences from this principle. The function is easier to test, you know exactly what input it takes, and it won't depend on anything else in your program. </p>
+<p><h4>day 22</h4>The map method iterates over each item in an array and returns a new array containing the results of calling the callback function on each element. It does this without mutating the original array.
+
+When the callback is used, it is passed three arguments. The first argument is the current element being processed. The second is the index of that element and the third is the array upon which the map method was called.</p>
+<p><h4>Day 23</h4>here i implemented the map function using a for loop.</p>
