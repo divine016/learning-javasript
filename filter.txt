@@ -1,0 +1,34 @@
+Explanation of the filteredList code
+TL;DR
+The filteredList code filters the watchList array to include only movies with an IMDB rating greater than 8.0, 
+and then maps the resulting array to a new array of objects containing only the movie title and rating.
+Explanation
+The filteredList code uses the filter and map array methods to transform the watchList array into a new array 
+of objects containing only the movie title and rating for movies with an IMDB rating greater than 8.0.
+The filter method is used to create a new array that includes only the movies with an IMDB rating greater than 8.0. 
+The filter method takes a callback function as an argument, which is called for each element in the array. 
+The callback function takes the current element as an argument and returns a boolean value indicating whether the 
+element should be included in the new array. In this case, the callback function checks if the imdbRating property 
+of the current movie is greater than 8.0.
+The map method is then used to transform the resulting array into an array of objects containing only the movie 
+title and rating. The map method takes a callback function as an argument, which is called for each element in the 
+array. The callback function takes the current element as an argument and returns a new value that will be included 
+in the new array. In this case, the callback function returns a new object with the title and rating properties 
+set to the Title and imdbRating properties of the current movie, respectively.
+Finally, the resulting array of objects is logged to the console using console.log.
+Possible bugs
+
+There is a typo in the code: imdbRatting should be imdbRating.
+The imdbRating property is a string, not a number, so the comparison with 8.0 may not work as expected.
+The resulting array of objects does not have a consistent property name for the rating property (ratting vs rating).
+
+Possible improvements
+
+Use the Number function to convert the imdbRating property to a number before comparing it with 8.0.
+Use a consistent property name for the rating property in the resulting array of objects.
+Sort the resulting array of objects by rating in descending order.
+
+References
+
+Array.prototype.filter()
+Array.prototype.map()

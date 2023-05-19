@@ -1,0 +1,32 @@
+Explanation of the nonMutatingSort function
+TL;DR
+The nonMutatingSort function takes an array as an argument, creates a copy of the global array, sorts the copy, and 
+returns the sorted copy without modifying the original array.
+Explanation
+The nonMutatingSort function takes an array as an argument. The function creates a copy of the global array using the 
+spread operator ([...globalArray]) and assigns it to the arr variable. The spread operator creates a new array with 
+the same elements as the globalArray array, so any changes made to arr will not affect the globalArray array.
+The function then sorts the arr array using the sort method. The sort method sorts the elements of an array in 
+place and returns the sorted array. The sort method takes a compare function as an optional argument. The compare 
+function is used to determine the order of the elements in the sorted array. The compare function takes two arguments, 
+a and b, which represent two elements of the array. The compare function returns a negative number if a should 
+come before b, a positive number if a should come after b, and 0 if a and b are equal.
+In this case, the compare function checks if a is equal to b. If they are equal, the function returns 0. If a is 
+less than b, the function returns a negative number, which tells the sort method to put a before b. If a is 
+greater than b, the function returns a positive number, which tells the sort method to put a after b.
+Finally, the function returns the sorted arr array.
+Possible bugs
+
+The globalArray variable is declared outside of the function, which makes it a global variable. This can lead to 
+unexpected behavior if the variable is modified by other parts of the code.
+The function does not check if the argument passed to it is an array, which can lead to errors if a non-array value is 
+passed as an argument.
+
+Possible improvements
+
+Remove the dependency on the global variable by passing the array to be sorted as an argument.
+Add input validation to ensure that the argument passed to the function is an array.
+
+References
+
+JavaScript Array sort method
