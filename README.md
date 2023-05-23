@@ -43,3 +43,16 @@ There are several good consequences from this principle. The function is easier 
 
 When the callback is used, it is passed three arguments. The first argument is the current element being processed. The second is the index of that element and the third is the array upon which the map method was called.</p>
 <p><h4>Day 23</h4>here i implemented the map function using a for loop.</p>
+<p><h4>day 26, 27,28</h4>Days that i did work. but stiil related to day 25,24,23</p>
+<p><h4>day 29</h4>reduce method
+//The callback function accepts four arguments. The first argument is known as the accumulator, which gets assigned the return value of the callback function from the previous iteration, the second is the current element being processed, the third is the index of that element and the fourth is the array upon which reduce is called
+
+//using the reduce method to return the key and value of an obj</p>
+<p><h4>day 30</h4>The sort method sorts the elements of an array according to the callback function. A side effect of the sort method is that it changes the order of the elements in the original array. In other words, it mutates the array in place</p>
+<p><h4>Day 31</h4>using regular expressions and also the split method to split string in to an array of that string. also did a little revision on regulaer expressions. Also learned about the join method: which  takes an array and combines it to a string.</p>
+<p><h4>day 32</h4>Apply Functional Programming to Convert Strings to URL Slugs. Use the every Method to Check that Every Element in an Array Meets a Criteria</p>
+<p><h4>day 33</h4>The some method works with arrays to check if any element passes a particular test. It returns a Boolean value - true if any of the values meet the criteria, false if not. Introduction to Currying and Partial Application</p>
+<p><h4>Day 34</h4>starting the last module and </p>
+<p><h4></h4></p>
+<p><h4></h4></p>
+<p><h4></h4></p>
