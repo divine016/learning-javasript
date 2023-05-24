@@ -52,7 +52,16 @@ When the callback is used, it is passed three arguments. The first argument is t
 <p><h4>Day 31</h4>using regular expressions and also the split method to split string in to an array of that string. also did a little revision on regulaer expressions. Also learned about the join method: which  takes an array and combines it to a string.</p>
 <p><h4>day 32</h4>Apply Functional Programming to Convert Strings to URL Slugs. Use the every Method to Check that Every Element in an Array Meets a Criteria</p>
 <p><h4>day 33</h4>The some method works with arrays to check if any element passes a particular test. It returns a Boolean value - true if any of the values meet the criteria, false if not. Introduction to Currying and Partial Application</p>
-<p><h4>Day 34</h4>starting the last module and </p>
-<p><h4></h4></p>
+<p><h4>Day 34</h4>starting the last module and wrote two function today
+<ol>
+    <li>code that takess two numbers in the array and add upto all the numbers in between them including those two numbers</li>
+    <li>code that takes two  arrays and checks if there is any number found in one that is not in the other.</li>
+</ol> </p>
+<p><h4>Day 35</h4> wrote 3 functions today 
+<ol>
+    <li>You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.</li>
+    <li>function that taks two paramters and checks if the objext found in the second argument is found in the first and returns an array containing the lements found in second argument.</li>
+    <li>/Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.</li>
+</ol></p>
 <p><h4></h4></p>
 <p><h4></h4></p>
