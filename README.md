@@ -65,3 +65,10 @@ When the callback is used, it is passed three arguments. The first argument is t
 </ol></p>
 <p><h4></h4></p>
 <p><h4></h4></p>
+<p><h4></h4></p>
+<p><h4></h4></p>
+<p><h4></h4></p>
+<p><h4>Day 39</h4>In this solution, we check every multiple of the largest value in the range until we find a value that is divisible by every value in the range.
+
+The upper bound for this loop is the product of all values in the provided range, because this number will be divisible by every value in the range. didnt understand this code</p>
+<p><h4>day 40</h4>started with the certification did the roman numeral converter and also workedd on the palindrom checker </p>
