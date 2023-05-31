@@ -66,9 +66,27 @@ When the callback is used, it is passed three arguments. The first argument is t
 <p><h4></h4></p>
 <p><h4></h4></p>
 <p><h4></h4></p>
-<p><h4></h4></p>
-<p><h4></h4></p>
+
 <p><h4>Day 39</h4>In this solution, we check every multiple of the largest value in the range until we find a value that is divisible by every value in the range.
 
 The upper bound for this loop is the product of all values in the provided range, because this number will be divisible by every value in the range. didnt understand this code</p>
-<p><h4>day 40</h4>started with the certification did the roman numeral converter and also workedd on the palindrom checker </p>
+<p><h4>day 40</h4>started with the certification did the roman numeral converter and also workedd on the palindrom checker also wrote  a function to reverse a string</p>
+<p><h4>day 41</h4>Flatten a nested array. You must account for varying levels of nesting. also wrote a code that  took a certain function as argument and an array if the elements in the array do not meet the function criteria then the elmt in the array should be cutoff starting form the left.</p>
+<p><h4>day 42</h4> wrote a function that converted from binary to words usefuls things i learned were split join parseInt and also String.fromCharCode also wrote a function that takes an array of object and a property and checks if all the elements in the array that have that property are truthy or not. Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum. </p>
+<p><h4>day 43</h4>Fill in the object constructor with the following methods below:
+<ul>
+    <li>getFirstName()</li>
+    <li>getLastName()</li>
+    <li>getFullName()</li>
+    <li>setFirstName(first)</li>
+    <li>setLastName(last)</li>
+    setFullName(firstAndLast)
+</ul>
+According to Kepler's Third Law, the orbital period  T of two point masses orbiting each other in a circular or elliptic orbit is:
+
+T=2π√(a**3/μ)
+</p>
+<p><h4>day 44</h4>Did the telephone validator and a function which takes a ROT13 encoded string as input and returns a decoded string.</p>
+<p><h4>day 45</h4></p>
+<p><h4></h4></p>
+<p><h4></h4></p>
