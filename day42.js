@@ -15,7 +15,7 @@ function binaryAgent(str) {
     return word.join('');
     
   }
-  //
+  // wrote a function that checks if the second argument passed is truthy all true in the first argument which is an object
   function truthCheck(collection, pre) {
     //sets a counter to 0
     let counter = 0

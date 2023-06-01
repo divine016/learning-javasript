@@ -1,4 +1,4 @@
-//
+//implemented a constructor
 const Person = function(firstAndLast) {
     let fullName = firstAndLast;
   

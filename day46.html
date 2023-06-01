@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day46</title>
+</head>
+<body>
+
+    <!-- first example -->
+        <!-- <h2>First page using js</h2>
+        <p>Finding HTML Elements by Query Selector</p>
+        <p class="intro">Hello World!.</p>
+        <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+        <p id="demo"></p>
+
+        <div id="main">
+            <p>finding element by tag name</p>
+            <p>this example demonstartes the <b>getElementByTagName</b> method</p>
+        </div>
+        <p id="demo"></p>
+        <script>
+            const first = document.getElementById('main');
+            const second = document.getElementsByTagName('p');
+            const final = document.getElementById('demo')
+            final.innerHTML = 'this is my first page' +'and  the first paragraph (index 0) inside main is: ' + y[0].innerHTML 
+            
+
+            const x = document.querySelectorAll('p.intro');
+            final.innerHTML = "the starting second p element with 'class intro' is:" + x[0].innerHTML
+        </script> -->
+
+
+    <!-- second example -->
+        <!-- <h2>JavaScript HTML DOM</h2>
+        <p>Finding html elements using <b>Document.forms</b>.</p>
+        <form id="form1" action="form">
+            First Name: <input type="text" name="fname" value="v1"> <br>
+            Last Name: <input type="text" name="lname" value="v2"> <br> <br>
+            <input type="submit" value="submit">
+        </form>
+        <p>these are the values of each element in the form:</p>
+        <p id="demo"></p>
+        <script>
+            const x = document.forms["form1"];
+            let text = '';
+            for(let i=0;i<x.length; i++){
+                text += x.elements[i].value + '<br>';
+            }
+            document.getElementById('demo').innerHTML = text; 
+        </script>-->
+    <!-- third example -->
+            <!-- <h2>JS HTML events</h2>
+            <h2 onclick="this.innerHTML = 'OOOOOPS!'"> CLICK ON ME</h2> -->
+            <!-- //CALLING A FUNCTION -->
+                    <!-- When a user clicks the mouse
+                    When a web page has loaded
+                    When an image has been loaded
+                    When the mouse moves over an element
+                    When an input field is changed
+                    When an HTML form is submitted
+                    When a user strokes a key -->
+            <!-- <h2>JS HTML events</h2>
+            <h2 onclick="changeText(this)"> CLICK ON ME</h2>
+            <script>
+                function changeText(id){
+                    id.innerHTML = 'Ooooooooppppssss!!!!'
+                }
+            </script> -->
+
+            <h2>JS HTML events</h2>
+            <p>click this button to display the date</p>
+            <button onclick="displayDate()"> the time is</button>
+            <script>
+                function displayDate(){
+                    document.getElementById('demo').innerHTML = Date();
+                }
+            </script>
+            <p id="demo"></p>
+</body>
+</html>
