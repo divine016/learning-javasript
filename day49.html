@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id01">Node elements</h1>
+    <h2 id="id02">
+        my first page
+    </h2>
+    <p id="id03"></p>
+    <h3>displaying document.body</h3>
+    <p id="demo"></p>
+    <h3>displaying document.documentElement</h3>
+    <p id="demo1"></p>
+    
+    <script>
+        //first method to access elements
+    
+        document.getElementById('id03').innerHTML = document.getElementById('id02').innerHTML;
+        //second method to access elements
+        document.getElementById('id03').innerHTML = document.getElementById('ido3').firstChild.nodeValue;
+
+        //displaying the body content first method
+        document.getElementById('demo').innerHTML = document.body.innerHTML;
+
+        //displaying the body content first method
+        document.getElementById('demo1').innerHTML = document.documentElement.innerHTML;
+    </script>
+</body>
+</html>

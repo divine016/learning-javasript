@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 47
+    </title>
+</head>
+<body onload="checkCookies()">
+    <h2>JS html events</h2>
+    
+    <p id="demo"></p>
+
+    <!-- second example -->
+        Enter name: <input type="text" id="name" onchange="upperCase()">
+        <p>when you leave the input field it would turn the value inputed in ti to upper case</p>
+
+    <!-- third example -->
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="padding:10px ; background-color:pink;">
+            mouseover me
+        </div>
+    <!-- fourth example -->
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+            Click me
+        </div>
+    <!-- fifth example -->
+        <p>this example uses the addEventListener() method to attarch a click event to a button</p>
+        <button id="mybtn">try it</button>
+    <!-- six -->
+        
+    <script>
+        // var x = document.getElementById('mybtn');
+        // x.addEventListener('mouseover', myFunc1);
+        // x.addEventListener('click', myFunc2);
+        // x.addEventListener('mouseout', myFunc3());
+        // function myFunc1(){
+        //     document.getElementById('demo').innerHTML += 'mouse over! <br>'
+        // }
+        // function myFunc2(){
+        //     document.getElementById('demo').innerHTML += 'clicked! <br>'
+        // }
+        // function myFunc3(){
+        //     document.getElementById('demo').innerHTML += 'mouse out! <br>'
+        // }
+        document.getElementById('mybtn').addEventListener('click',  function () {alert('hello world'); })
+        function mDown(obj){
+            obj.style.backgroundColor = 'blue';
+            obj.innerHTML = 'release me'
+        }
+        function mUp(obj){
+            obj.style.backgroundColor = 'orange';
+            obj.innerHTML = 'thank you'
+        }
+        function mOver(obj){
+            obj.innerHTML = 'thank you'
+        }
+        function mOut(obj){
+            obj.innerHTML = 'mouse over me'
+        }
+        function upperCase(){
+            const x = document.getElementById("name");
+            x.value = x.value.toUpperCase();
+        }
+        function checkCookies(){
+            var text = '';
+            if(navigator.cookieEnabled === true){
+                text = 'cookies enabled';
+            }else{
+                text = 'cookies not enebled';
+            }
+            document.getElementById('demo').innerHTML = text
+        }
+    </script>
+</body>
+</html>
