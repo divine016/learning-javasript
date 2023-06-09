@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgb(17, 32, 31);
+        }
+        .digi-clock{
+            color: #fff;
+            background: rgb(14, 51, 49);
+            width: 400px;
+            padding: 10px 15px;
+            border: solid 2px rgb(0, 255, 242);
+            box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+            border-radius: 10px;
+            -webkit-box-reflect: below 20px linear-gradient(transparent, rgba(255, 255,255, 0.1));
+            transition: 0.5s;
+            transition-property: background, box-shadow;
+        }
+        .digi-clock:hover{
+            background: rgb(4, 138, 131);
+            box-shadow: 0 0 30px rgb(4, 138, 131);
+            
+        }
+        .date{
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+        .time{
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .time span:not(:last-child){
+            position: relative;
+            margin: 0 6px;
+            font-weight: 800;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+        .time span:last-child{
+            background: #01caaf;
+            font-size: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-top: 10px;
+            padding: 0 5px;
+            border-radius: 3px;
+        }
+         /*
+        .hour, .dot, .minute{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            padding: 0 10px;
+            line-height: 125px;
+        } */
+    </style>
+</head>
+<body onload="initClock()">
+    <div class="digi-clock">
+        <div class="date">
+            <span id="day">Day</span>
+            <span id="month">Month</span>
+            <span id="dayNum">00</span>
+            <span id="year">Year</span>
+        </div>
+        <div class="time">
+            <span id="hour">00</span>:
+            <span id="minute">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+        </div>
+    </div>
+</body>
+<script>
+    function updateClock(){
+        var now =  new Date();
+        var dName = now.getDay(),
+            mo = now.getMonth(),
+            dNum = now.getDate(),
+            yr = now.getFullYear(),
+            hour = now.getHours(),
+            min = now.getMinutes(),
+            sec = now.getSeconds(),
+            pe = 'AM';
+
+        if(hour == 0){
+            hour == 12
+        }
+        if (hour > 12){
+            hour -= 12
+            pe = 'PM';
+        }
+        var month = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
+        var week = ['SUNDAY', 'MONDAY', "TUESDAY", 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+        var ids = ['day', 'month', 'dayNum', 'year', 'hour', 'minute', 'seconds', 'period'];
+        var values = [week[dName], month[mo], dNum, yr, hour, min, sec, pe];
+        for(let i = 0; i < ids.length; i++){
+            document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+        }
+    }
+    function initClock(){
+        updateClock();
+        window.setInterval("updateClock()", 1)
+    }
+</script>
+</html>
