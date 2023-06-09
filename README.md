@@ -90,3 +90,22 @@ T=2π√(a**3/μ)
 <p><h4>day 45</h4><h2><b>BREAK</b></h2></p>
 <p><h4></h4></p>
 <p><h4></h4></p>
+<p><h4></h4></p>
+<p><h4>day 49</h4>nodeName is read-only
+<ul><h3>nodeName is read-only<h3>
+<li>nodeName of an element node is the same as the tag name</li>
+<li>nodeName of an attribute node is the attribute name</li>
+<li>nodeName of a text node is always #text</li>
+<li>nodeName of the document node is always #document</li>
+</ul>
+
+
+
+
+</p>
+<p><h4>day 50 51</h4> i build an interface that takes in user details and print them out when requested.</p>
+<p><h4>day 52</h4>"here i made a card that can be used to represent people that implemented glasmorphism. its cool though :)</p>
+<p><h4>day 53</h4> made a digital clock. the file that has VS at the end represents the clock numbers in two's and the one just there represent the clock numbers in one's</p>
+<p><h4></h4></p>
+<p><h4></h4></p>
+<p><h4></h4></p>
