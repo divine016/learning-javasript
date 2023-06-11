@@ -1,4 +1,5 @@
-<h2>This file would contain the codes i would write for both alx and my personal learning on javascript</h2>
+<h1>OK  so initially it was meant for learning js which i am still doing but int he form of #100days of code would change the name of the file soon</h1>
+<h2>This file would contain the codes i would write for both alx and my personal learning on javascript(my 100 days of code learning journey)</h2>
 <p>I am currentl taking the javascript course on @grasshopper and I learning javascript.</p>
 <p><h4>Day1</h4> <br> I completed half of the task on @grasshopper and I was able to learn about function calling, variable, if/else statements. </p>
 <p><h4>Day2</h4> <br>I was able to finish the first part of the course which the coding fundamentals and i learned about for loops objects, for-in and for-of loops how to access an object and how to store an array as an object property.</p>
@@ -106,6 +107,7 @@ T=2π√(a**3/μ)
 <p><h4>day 50 51</h4> i build an interface that takes in user details and print them out when requested.</p>
 <p><h4>day 52</h4>"here i made a card that can be used to represent people that implemented glasmorphism. its cool though :)</p>
 <p><h4>day 53</h4> made a digital clock. the file that has VS at the end represents the clock numbers in two's and the one just there represent the clock numbers in one's</p>
-<p><h4></h4></p>
-<p><h4></h4></p>
-<p><h4></h4></p>
+<p><h4>Day 54</h4>made a calculator</p>
+<p><h4>Day 55</h4>made a mui</p>
+<p><h4>day 56</h4> was really tired and commented on the code i wrote for the musc player</p>
+<p><h4>day 57</h4> ok so now starti g with JS for the music player</p>
