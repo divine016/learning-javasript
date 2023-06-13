@@ -80,7 +80,7 @@ body{
 }
 .progress-area .progress-bar{
     height: inherit;
-    width: 50%;
+    width: 0%;
     position: relative;
     border-radius: inherit;
     background: blue;
@@ -132,12 +132,13 @@ body{
 .controls #next{
     margin-right: -15px;
 }
-.controls .play-pause{
+/* .controls .play-pause{
     margin-left: 13px;
-}
+} */
 .controls .play-pause{
     height: 50px;
     width: 50px;
+    text-align: center;
     background: linear-gradient(90deg, var(--white) 0%, var(--light-black) 100%); ;
     box-shadow: 0px 0px 5px var(--pink);
     border-radius: 50%;
@@ -145,7 +146,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-/* .play-pause::before{
+.play-pause::before{
     content: '';
     position: absolute;
     height: 43px;
@@ -165,7 +166,7 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-} */
+}
 .music-list{
     position: absolute;
     left: 0;
@@ -179,6 +180,7 @@ body{
     background: var(--white);
     transition: all 0.2s ease-out;
 }
+
 /* the .show would be used in js */
 .music-list.show{
     bottom: 0;
