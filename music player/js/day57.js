@@ -12,11 +12,12 @@ musicList = main.querySelector(".music-list"),
 showMoreBtn = main.querySelector("#more-music"),
 hideMusicBtn = musicList.querySelector("#close");
 
-
-let musicIndex = 2  ;
+//loads a different song when the page is refreshed
+let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 
 window.addEventListener("load", () =>{
     LoadMusic(musicIndex); //calling load function when we open the page (wimdo)
+    playingNow();
 });
 
 //function to load the  music
@@ -52,6 +53,7 @@ function nextMusic(){
 }
    LoadMusic(musicIndex);
    playMusic();
+   playingNow();
 };
 
 //previous music funtion
@@ -63,6 +65,7 @@ function prevMusic(){
     }
     LoadMusic(musicIndex);
     playMusic();
+    playingNow();
  };
 
 //making the previous icon to work
@@ -72,7 +75,7 @@ playPauseBtn.addEventListener('click', ()=>{
    
     //if isMusicPaused is true then call pauseMusic else call playMusic
     isMusicPaused ? pauseMusic() : playMusic();
-
+    playingNow();
 });
 
 //to play or pause the music using event listener
@@ -179,7 +182,7 @@ mainAudio.addEventListener("ended", ()=>{
             break;
         case "shuffle": //if the icon is repeat one then shuffle
             //generating a random number between max range and array length
-            let randomIndex = Math.floor((  Math.random() * allMusic.length) + 1);
+            let randomIndex = Math.floor((Math.random() * allMusic.length) + 1);
             do{
                 randomIndex = Math.floor((Math.random() * allMusic.length) + 1);   
             }
@@ -188,6 +191,7 @@ mainAudio.addEventListener("ended", ()=>{
             musicIndex = randomIndex //passing the value of the random index generated to the music index
             LoadMusic(musicIndex); //loading the music index gotten and hence calling the loadMusic function  
             playMusic(); //calling the play music function
+            playingNow();
             break;
     }
 });
@@ -202,4 +206,72 @@ hideMusicBtn.addEventListener("click", ()=>{
     showMoreBtn.click();
 });
 
-constulTag = main.querySelector("ul");
+//lets create the list of the song
+
+const ulTag = main.querySelector("ul"); //getting the ul element
+
+//lets create the list according to the array length(object)
+
+for(let i = 0; i < allMusic.length; i++){
+    let liTag = `
+                <li li-index="${i + 1}">
+                    <div class="row">
+                        <span>${allMusic[i]['name']}</span>
+                        <p>${allMusic[i].artist}</p>
+                    </div>
+                    <audio class = "${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
+                    <span id="${allMusic[i].src}" class="audio-duration">3:01</span>
+                </li>`;
+    ulTag.insertAdjacentHTML("beforeend", liTag); //adding elements before the end of the ul tag
+
+    let liAudioDuration =ulTag.querySelector(`#${allMusic[i].src}`);
+    let liAudioTag =ulTag.querySelector(`.${allMusic[i].src}`);
+
+    liAudioTag.addEventListener("loadeddata", ()=>{
+        let audioDuration = liAudioTag.duration;
+        let totalMin = Math.floor(audioDuration/60);
+        let totalSec = Math.floor(audioDuration % 60);
+        //instead of using pad we cols use this
+            // if(totalSec < 10){
+            //     totalSec = `0${totalSec}`
+            // }
+        liAudioDuration.innerHTML = `${totalMin.pad(2)}:${totalSec.pad(2)}`;
+        liAudioDuration.setAttribute("t-duration", `${totalMin.pad(2)}:${totalSec.pad(2)}`); //storing the time in t-duration so that we can get it back later
+    });
+}
+
+//working on the play particular songs
+const allLiTags = ulTag.querySelectorAll("li");
+function playingNow(){
+    for(let j = 0; j < allLiTags.length; j++){
+
+        let audioTag = allLiTags[j].querySelector(".audio-duration");
+        //removing playing class from other li elements if they are not playing
+        if(allLiTags[j].classList.contains("playing")){
+            allLiTags[j].classList.remove("playing");
+            //getting the audio duration value storeda above and passing it the .ausio-duration.innerHTML
+            let getTDuration =audioTag.getAttribute("t-duration");
+            audioTag.innerHTML = getTDuration
+        }
+        //if there is an li tag that the index is equal to music index then this music is playing now and we need to style it.
+    
+        if(allLiTags[j].getAttribute("li-index") == musicIndex){
+             allLiTags[j].classList.add("playing");
+             audioTag.innerHTML = "playing";
+
+        }
+        //adding onclick events to all li tags
+        allLiTags[j].setAttribute("onclick", "clicked(this)")
+    }
+};
+
+//lets play the song on click
+
+function clicked(element){
+    //getting the index of particular clicked li tag
+    let getLiIndex = element.getAttribute("li-index");
+    musicIndex = getLiIndex; //passing li index to music index
+    LoadMusic(musicIndex);
+    playMusic();
+    playingNow();
+}

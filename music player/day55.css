@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-:root{
+/* :root{
     --white:#fff;
     --purple:#d310da;
     --pink: rgb(241, 193, 241);
@@ -10,6 +10,15 @@
     --blue:rgb(8, 52, 109);
     --purple-shadow:#57025a;
     --light-black-shadow:rgba(0, 0, 0, 0.15);
+} */
+:root{
+    --white:rgb(255, 255, 255);
+    --purple:#170118;
+    --pink: rgb(248, 148, 248);
+    --light-black:#515c6f;
+    --blue:rgb(9, 180, 248);
+    --purple-shadow:#a188a1;
+    --light-black-shadow:rgba(0, 0, 0, 0.5);
 }
 body{
     display: flex;
@@ -24,7 +33,7 @@ body{
     background: var(--white);
     border-radius: 10px;
     padding: 25px 30px;
-    box-shadow: 0px 6px 15px var(--light-black-shadow);
+    box-shadow: 0px 10px 15px var(--light-black-shadow);
 }
 .wrapper i{
     cursor: pointer;
@@ -222,6 +231,7 @@ body{
 .header #close{
     font-size: 22px;
     color: var(--light-black);
+    cu
 }
 .music-list .ul li span{
     font-size: 22px;
@@ -230,6 +240,11 @@ ul li .row p{
     margin: 5px 0;
     opacity: 0.9;
 }
-ul li .audio-duration{
+ul li.audio-duration{
     font-size:14px ;
+}
+
+ul li.playing{
+    color: var(--blue);
+    pointer-events: none;
 }
