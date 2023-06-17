@@ -93,7 +93,10 @@ T=2π√(a**3/μ)
 <p><h3>day 45</h3><h2><b>BREAK</b></h2></p>
 <p><h3></h3></p>
 <p><h3></h3></p>
-<p><h3></h3></p>
+<p><h3>day 48</h3><br> learned about event bubling and capturing in javascript
+<br> Learned about event capturing and bubbling.
+When we use the addEventListener it takes in 3 parameters which is the action, function and also the event propagation mode. the default value is false meaning we would use bubbling to handle how the program work <br
+></p>
 <p><h3>day 49</h3><br>nodeName is read-only
 <ul><h3>nodeName is read-only<h3>
 <li>nodeName of an element node is the same as the tag name</li>
@@ -126,7 +129,11 @@ and i also finished coding my music app its so cool and i played the songs i lik
     <li>we also talked abit about APIs API is a way to pull data from another website</li>
 </ul>
 We can have an object that takes other object like lets say we an have an atribute that takes an object as an</p>
-<p><h3>Day 62</h3>i am starting with the course on freecodecamp frontend libraries<br></p>
+<p><h3>Day 62</h3>i am starting with the course on freecodecamp frontend libraries
+
+<br><br>
+React is a library that helps you build web applications faster. it has just one page and the page is an index.html and is responsible for managing traffic to the other webpages. think about react like a component.<br> vite is fast and helps you build react apps. <br>
+</p>
 <p><h3>Day 62</h3><br></p>
 <p><h3>Day 62</h3><br></p>
 <p><h3>Day 62</h3><br></p>

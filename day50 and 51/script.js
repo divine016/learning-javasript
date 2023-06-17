@@ -20,7 +20,7 @@ function getUserDetails(){
             userName = prompt('pLease enter your user name lesser than 15');
         }
 
-        userDetailsDatabase['User Name'] = userName;
+        userDetailsDatabase['UserName'] = userName;
 
 // email
         let email = prompt('Enter you email address');
@@ -59,7 +59,7 @@ function getUserDetails(){
         }
 
         while(validatePassword(password) == false){
-            userName = prompt('pLease enter a password greater than 6 and less than 8');
+            userName = prompt('pLease enter a password  less than 8');
         }
 
         userDetailsDatabase['Password'] = password;
@@ -67,7 +67,7 @@ function getUserDetails(){
 //confirm password
         let confirmPassword = prompt('confirm your password');
 
-        function validateconfirmPassword(confirmPassword){
+        function validateConfirmPassword(confirmPassword){
             if(confirmPassword == password){
                 return true
             }else{
@@ -75,7 +75,7 @@ function getUserDetails(){
             }
         }
 
-        while(validateconfirmPassword(confirmPassword) == false){
+        while(validateConfirmPassword(confirmPassword) == false){
             userName = prompt('password do not match');
         }
         userDetailsDatabase['Confirm Password'] = confirmPassword;
@@ -84,5 +84,5 @@ console.log(userDetailsDatabase)
 //see details
 
 function displayUserDetails(){
-    alert(`your Details \n\nUsername: ${userDetailsDatabase['UserName']}\nPhone Number: ${userDetailsDatabase["Email"]}`)
+    alert(`your Details \n\nUsername: ${userDetailsDatabase['UserName']}\n Email: ${userDetailsDatabase["Email"]}`)
 }
