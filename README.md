@@ -129,14 +129,16 @@ and i also finished coding my music app its so cool and i played the songs i lik
     <li>we also talked abit about APIs API is a way to pull data from another website</li>
 </ul>
 We can have an object that takes other object like lets say we an have an atribute that takes an object as an</p>
-<p><h3>Day 62</h3>i am starting with the course on freecodecamp frontend libraries
+<p><h3>Day 61-63</h3><br>React is a library that helps you build web applications faster. it has just one page and the page is an index.html and is responsible for managing traffic to the other webpages. think about react like a component.<br> vite is fast and helps you build react apps. <br></p>
+<p><h3>Day 64-65</h3><br><br>i am starting with the course on freecodecamp frontend libraries
 
-<br><br>
-React is a library that helps you build web applications faster. it has just one page and the page is an index.html and is responsible for managing traffic to the other webpages. think about react like a component.<br> vite is fast and helps you build react apps. <br>
+i need to take tweeets and post here write an article.
+
 </p>
-<p><h3>Day 62</h3><br></p>
-<p><h3>Day 62</h3><br></p>
-<p><h3>Day 62</h3><br></p>
+
+<p><h3>Day 66</h3><br> reading a book known as the eloquent javascript chapter 1<br></p>
+<p><h3>Day 67</h3><br>reading a book known as the eloquent javascript chapter 2</p>
+
 <p><h3>Day 62</h3><br></p>
 <p><h3>Day 62</h3><br></p>
 <p><h3>Day 62</h3><br></p>
