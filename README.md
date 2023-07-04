@@ -140,7 +140,24 @@ i need to take tweeets and post here write an article.
 <p><h3>Day 67</h3><br>reading a book known as the eloquent javascript chapter 2</p>
 
 <p><h3>Day 62</h3><br></p>
-<p><h3>Day 62</h3><br></p>
+<p><h3>chapter 3 exercises</h3><br>
+<h4>Exercise 1</h4>
+<p>  The previous chapter introduced the standard function Math.min that returns its smallest argument. We can build something like that now. Write a function min that takes two arguments and returns their minimum.
+</p>
+<h4>Exercise 2</h4>
+We’ve seen that % (the remainder operator) can be used to test whether a number is even or odd by using % 2 to see whether it’s divisible by two. Here’s another way to define whether a positive whole number is even or odd:
+
+<ul>Zero is even.</ul>
+<ul>One is odd.</ul>
+<ul>For any other number N, its evenness is the same as N - 2.</ul>
+<p>
+Define a recursive function isEven corresponding to this description. The function should accept a single parameter (a positive, whole number) and return a Boolean.
+</p>
+<p>
+Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?</p></p>
+
+<h4>Exercise 3</h4>
+<p></p>
 <p><h3>Day 62</h3><br></p>
 <p><h3>Day 62</h3><br></p>
 <p><h3>Day 62</h3><br></p>
