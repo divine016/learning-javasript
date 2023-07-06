@@ -79,3 +79,37 @@ function sum(array){
   }
   return sum;
 }
+
+//reverse an array
+function reverseArray(arr){
+    let newArr = [...arr]
+    let array = [];
+      for(let i = newArr.length -1; i >= 0; i--){
+         array.push(arr[i]);
+       }
+    return array;
+  }
+
+//return a list
+function arrayToList(arr){
+    let obj = {}; //empty object
+    let size = arr.length; //determine the size of the array
+      
+    for(let i = 0; i <= size - 1; i++){
+      left = arr.slice(1);
+      let lSize = left.length
+
+      //console.log(lSize)
+        obj.value = arr[i] // the values should be equal to the elemnt at the first position
+             if (lSize == 0) {
+               obj.rest = null
+             } else{
+               obj.rest = arrayToList(left);
+             }
+    
+      return obj;
+    }
+  }
+  
+  console.log(arrayToList([10, 20, 30]))
+  //{ value: 20, rest: { value: 30, rest: null } } }
