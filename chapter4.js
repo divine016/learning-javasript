@@ -21,7 +21,7 @@ console.log|(objA);
 
 //corelation is either positive or negative.
 //if positive then if you know one then you must know the other negative means if one is increasing the other is reducing.
-//values isually ranges from -1 - 1
+//values usually ranges from -1 - 1
 
 //serializing data means converting it  to a dlat descrition. a popular way to do that is called JSON. which mean javascript object notation.
 //it is a similar way of writing objects and arrays in js.
@@ -113,3 +113,5 @@ function arrayToList(arr){
   
   console.log(arrayToList([10, 20, 30]))
   //{ value: 20, rest: { value: 30, rest: null } } }
+
+  function deepCompare
