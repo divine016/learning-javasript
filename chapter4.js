@@ -114,4 +114,25 @@ function arrayToList(arr){
   console.log(arrayToList([10, 20, 30]))
   //{ value: 20, rest: { value: 30, rest: null } } }
 
-  function deepCompare
+  function deepEqual(a, b) {
+    if (a === b) return true; //if object is equal to compare return true
+    
+    //if obj is null or type of obj is not equal to object or compare is null
+    //or type of compare is not equal to an object return false 
+
+    if (a == null || typeof a != "object" ||
+        b == null || typeof b != "object") return false;
+  //getting the keys of obj and copare
+    let keysA = Object.keys(a), keysB = Object.keys(b);
+  
+    //if both lenght are not equal return false
+    if (keysA.length != keysB.length) return false;
+  //for loop to loop over obj keys
+    for (let key of keysA) {
+      //if keys of compare have the key (which is that of obj)
+      //or deepEqual(obj[key], b[key]) give true
+      if (!keysB.includes(key) || !deepEqual(a[key], b[key])) return false;
+    }
+  
+    return true;
+  }
