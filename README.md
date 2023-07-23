@@ -27,12 +27,12 @@ learning dom manipulation on w3schools. don't have data on my pc so cant connect
 <p><h3>Day 12</h3> <br>so learned about svg, event handlers
 </p>
 <p><h3>Day13</h3><br> learned more on animations. how to include loops so as to make complex animation. <br> Also learned about debugging code and learned about the different types of errors. syntax arithmetic and logic errors. <br> Learned about the try ...catch statements</p>
-<p><h3>day 14</h3> <br> getElementById is used to select a specific id and returns the element matching the id. <br>
+<p><h3>day 14</h3> <br> <img src="./img/file11.PNG"><br> getElementById is used to select a specific id and returns the element matching the id. <br>
 .textContent is used to change the text of a specific id.  the appendChild method is used to add an html element as a  child of another element.</p>
 <p><h3>Day 15</h3> <br>I continued to learn how to get element from html using javascript and I also leaarned about the appendChild element. <br> and also about the createElement property. <br>
 document.createElelement('') is used to create a new element then you can use the appendChild so as to append the element in the body. <br>
 also learned about the addEventListenner. it takes two parameter the taction to perform and also the event.</p>
-<p><h3>day 16</h3> <br> so yesterday I went to the css battle page and a friend of mine was teaching me how to solve redo some fun drawings using css and html. </p>
+<p><h3>day 16</h3> <br> <img src="./img/file12.PNG"><br> so yesterday I went to the css battle page and a friend of mine was teaching me how to solve redo some fun drawings using css and html. </p>
 <p><h3>Day 17</h3> <br>learned about automation with appScripts. https://www.google.com/script/start/</p>
 <p><h3>Day 18</h3> <br> so for day 18 I worked on an old project which I had build already and im trying to make it more dynamic. Afro Vision </p>
 <p><h3>Day 19</h3> <br> still worked on the project.</p>
@@ -91,13 +91,13 @@ T=2π√(a**3/μ)
 </p>
 <p><h3>day 44</h3><br>Did the telephone validator and a function which takes a ROT13 encoded string as input and returns a decoded string.</p>
 <p><h3>day 45</h3><h2><b>BREAK</b></h2></p>
-<p><h3></h3></p>
-<p><h3></h3></p>
-<p><h3>day 48</h3><br> learned about event bubling and capturing in javascript
+<p><h3>day 46</h3><br> <img src="./img/file13.PNG"></p>
+<p><h3>day 47</h3><br> <img src="./img/file4.PNG"></p>
+<p><h3>day 48</h3><br> <img src="./img/file5.PNG"><br> learned about event bubling and capturing in javascript
 <br> Learned about event capturing and bubbling.
 When we use the addEventListener it takes in 3 parameters which is the action, function and also the event propagation mode. the default value is false meaning we would use bubbling to handle how the program work <br
 ></p>
-<p><h3>day 49</h3><br>nodeName is read-only
+<p><h3>day 49</h3><br> <img src="./img/file6.PNG"><br>nodeName is read-only
 <ul><h3>nodeName is read-only<h3>
 <li>nodeName of an element node is the same as the tag name</li>
 <li>nodeName of an attribute node is the attribute name</li>
@@ -105,10 +105,10 @@ When we use the addEventListener it takes in 3 parameters which is the action, f
 <li>nodeName of the document node is always #document</li>
 </ul>
 </p>
-<p><h3>day 50 51</h3><br> I build an interface that takes in user details and print them out when requested.</p>
-<p><h3>day 52</h3><br>"here I made a card that can be used to represent people that implemented glasmorphism. its cool though :)</p>
+<p><h3>day 50 51</h3><br> <img src="./img/file9.PNG"><br> I build an interface that takes in user details and print them out when requested.</p>
+<p><h3>day 52</h3><br> <img src="./img/file10.PNG"><br>"here I made a card that can be used to represent people that implemented glasmorphism. its cool though :)</p>
 <p><h3>day 53</h3><br> made a digital clock. the file that has VS at the end represents the clock numbers in two's and the one just there represent the clock numbers in one's</p>
-<p><h3>Day 54</h3><br>made a calculator</p>
+<p><h3>Day 54</h3><br> <img src="./img/file8.PNG"><br>made a calculator</p>
 <p><h3>Day 55</h3><br>started with a music player app did the html and part of the css</p>
 <p><h3>day 56</h3><br>ok so I finished the css and started  was really tired so I commented on the html and css of the music player.</p>
 <p><h3>day 57</h3><br> ok so now starting with JS for the music player</p>
@@ -217,4 +217,4 @@ So today I started the tutorial and then I did some cool stuff
     <img src="./img/file3.PNG">
     <p>Didnt finish the tutorial though.</p>
 </p>
-<p><h3>Day 83</h3><br></p>
+<p><h3>Day 83</h3><br> was able to do the testimonials part now going to the contact page soon done with it.</p>
