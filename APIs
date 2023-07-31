@@ -1,0 +1,35 @@
+well these last days we would be talking about apis. 
+browser have built in apis that help them get information. for example the geolocation api  tells the position of the browsers location. 
+
+we alo have third party apis which are apis that are not build in. e.g we have youtube(used to display videos on the website), twitter(allws you to display tweets), facebook(allows you to display facebook info on a website) and many more.
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Geolocation</h2>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
