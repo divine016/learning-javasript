@@ -62,13 +62,15 @@ let trackingVar = false;
 //exerciese
 //In this exercise, we will create a basic counter that will increase a
 //dynamic variable by a consistent step value, up to an upper limit.
-
+/*
 let counter = 0;
 let step = 2;
 do {
     console.log(counter);
     counter += step;
 } while(counter <= 100)
+*/
+
 
 //for loops
 //for (initialize variable; condition; statement) {
@@ -137,3 +139,86 @@ console.log(names);
 // ]
 
 //pratice exercise 5.5
+let gridArr = [];
+let numberOfCells = 64;
+let counter2 = 0;
+let row1;
+for (let i = 0; i < numberOfCells + 1; i++){
+    if (counter2 % 8 == 0){
+        if (row1 != undefined){
+            gridArr.push(row1);
+        }
+        row1 = [];
+    }
+    counter2++;
+    let temp = counter2;
+    row1.push(temp);
+
+}
+console.table(gridArr);
+
+//continuation of chaptr 5
+
+//for of loop
+//we use for of loops to loops in an array
+
+//syntax of a for of loop
+/* 
+let arr = [some arr];
+for (let var of arr){
+    //code to be executed
+    //value of variableName gets updated every iteration
+    // all values of the array will be variableName once
+}
+*/
+
+//example
+let arrNames = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+for (let names of arrNames){
+    console.log(names);
+}
+
+//practice 5.6
+let incrementingArr = [];
+for (let i = 0; i< 10; i++){
+    incrementingArr.push(i);
+}
+console.log(incrementingArr);
+for (let numb of incrementingArr){
+    console.log(numb);
+}
+
+//loops and objects
+
+/* */
+
+
+
+
+/* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
