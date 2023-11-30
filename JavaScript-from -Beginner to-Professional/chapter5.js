@@ -190,11 +190,190 @@ for (let numb of incrementingArr){
 
 //loops and objects
 
+//for in loops
+
+/* The for in loop is
+somewhat similar to the for of loop. Again here, we need to specify
+a temporary name, also referred to as a key, to store each property
+name in*/
+
+let car = {
+    model: "Golf",
+    make: "Volkswagen",
+    year: 1999,
+    color: "black",
+    };
+// let pig = car[make] what could make a property not print out due to the bracket sign
+for (let prop in car){
+    //console.log(prop);
+    //console.log(car[prop]);
+}
+
+//practive 5.7
+let obj = {
+    food : 'rice',
+    fruits : 'orange',
+    color : 'black'
+};
+let arr = ['rice', 'drink', 'money'];
+for (let prop in obj){
+    console.log(prop);
+    console.log(obj[prop]);
+}
+
+for (let prop in arr){
+    console.log(prop);
+}
+
+//convrting object values to an array we use line below
+//Object.keys(nameOfObject)
+let arrKeys = Object.keys(obj);
+console.log(arrKeys);
+
+//looping over the names of an object of
+
+for(let key of Object.keys(car)) {
+    console.log(key);
+}    
+
+//looping over the values of an object
+for(let key of Object.values(car)) {
+    console.log(key);
+    }
+
+/*
+More interesting is how to loop over both arrays at the same time
+using the for of loop. In order to do so, we will have to use
+Object.entries() .
+*/
+let arrEntries = Object.entries(car);
+console.log(arrEntries)
+
+for (const [key, value] of Object.entries(car)) {
+    console.log(key, ":", value);
+    }
+
+
+    let cars = [
+        {
+        model: "Golf",
+        make: "Volkswagen",
+        year: 1999,
+        color: "black",
+        },
+        {
+        model: "Picanto",
+        make: "Kia",
+        year: 2020,
+        color: "red",
+        },
+        {
+        model: "Peugeot",
+        make: "208",
+        year: 2021,
+        color: "black",
+        },
+        {
+        model: "Fiat",
+        make: "Punto",
+        year: 2020,
+        color: "black",
+        }
+    ];
+//use of break. ends the current loop that is it stops looking.
+for (let i = 0; i < 10; i++){
+    console.log(i);
+    if( i === 4){
+        break;
+    }
+}
+
+for (let i = 0; i < cars.length; i++){
+    if( cars[i].year >= 2021){
+        if (cars[i].color === "black"){
+            console.log("I have found my new car:", cars[i]);
+            break;
+        }
+    }
+}
+
+//continue
+
+/* continue can be used to
+move on to the next iteration of the loop. It quits the current iteration
+and moves back up to check the condition and start a new iteration. */
+
+for (let car of cars){
+    if(car.color !== "black"){
+        continue;
+    }
+    if (car.year >= 2020) {
+        console.log("we could get this one:", car);
+    }
+}
+
+let v = 1;
+while (v < 10) {
+v++;
+if ((v-1) % 2 === 0){
+continue;
+}
+console.log(v-1);
+}
+
+// Practice exercise 5.8
+let sentence =  "";
+let skip = 5;
+for (let i = 0; i < 10; i++){
+    if (i == skip){
+        break;
+    }
+    sentence += i;
+}
+console.log(sentence)
+
+// labelled loops
+
+// to label a loop we need to give the name of the loop then use :
+// e.g 
+// then we can now use this label to break out of an outer inside an insider loop.
+
+let groups = [
+    ["Martin", "Daniel", "Keith"],
+    ["Margot", "Marina", "Ali"],
+    ["Helen", "Jonah", "Sambikos"],
+]
+
+//example
+
+outerLoop:
+for(let group of groups) {
+    for (let name of group){
+        if (name.startsWith('M')){
+            console.log(name);
+        }
+        break outerLoop;
+
+    }
+}
+
+//chaerter project
+
+
+
+
+
 /* */
-
-
-
-
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
 /* */
 
 
