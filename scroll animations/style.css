@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', serif;
+}
+
+body{
+    background: #1D2128;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(2){
+    color: #fff;
+}
+section:nth-child(3){
+    background-color: #fff;
+    color: #1D2128;
+}
+section:nth-child(4){
+    color: #fff;
+
+}
+section:nth-child(5){
+    background-color: #fff;
+    color: #1D2128;
+}
+section .container{
+    margin: 60px;
+}
+section h1{
+    font-size: 50px;
+}
+
+section h2{
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+section .card{
+    display: flex;
+}
+
+section .card .text-card{
+    background: #2696e9;
+    margin: 20px;
+    padding: 20px;
+}
+
+section .card .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.reveal{
+    position:relative ;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(80px);
+    opacity: 1;
+}
+@media (max-width: 900px) {
+    section h1{
+        font-size: 30px;
+    }
+
+    section .card{
+        flex-direction: column;
+    }
+}
