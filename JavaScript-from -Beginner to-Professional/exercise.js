@@ -106,13 +106,28 @@ while (n != 1){
 }
 
 //the next solution problem is in the readme file. the image is named day2Ques2
-let arr = [1, 2, 3, 5, 6, 7];
-let value = 4;
+let arr = [1, 2, 3, 3, 4, 4, 5, 6, 7];
+let value = 3;
 let output;
 for (var i = 0; i < arr.length; i++) {
-   if (arr[i] <= value && arr[i+1] >= value) {
-     output = i+1;;
-     console.log(`output :${output}`)
+   if (arr[i] < value && arr[i+1] >= value) {
+     output = i+1;
+     console.log(`outpu :${output}`)
      i++;
   }
 }
+
+//hurdle jump
+function hurdleJump (arr, value) {
+  let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > value) {
+        return false;
+      } 
+      count ++;
+      if (count == arr.length){
+        return true
+      }
+    }
+}
+console.log(hurdleJump([1,2,1], 1))
