@@ -122,10 +122,27 @@ console.log(finalArr)
 
 //variable scope in functions.
 
+//variables defined inside the function are not available outside the function too.
+//with the returnstatemen the value of a variable can be caught and return outside the function. note that the key word here is return and value not the variable in ITS self.
 
+function testAvailability () {
+    let y = "I'll return";
+    console.log("Available here:", y);
+    return y;
+}
 
+let z = testAvailability();
 
+console.log("Outside the function:", z);
+console.log("Not available here:", y);
 
+//output
+
+//Available here: I'll return
+//Outside the function: I'll return
+//ReferenceError: y is not defined
+
+//a block is defined by 2 curly braces(openning and closing) { } the let is block scoped while the var is function scoped.
 
 
 
