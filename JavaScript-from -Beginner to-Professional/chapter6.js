@@ -134,7 +134,7 @@ function testAvailability () {
 let z = testAvailability();
 
 console.log("Outside the function:", z);
-console.log("Not available here:", y);
+//console.log("Not available here:", y);
 
 //output
 
@@ -143,13 +143,201 @@ console.log("Not available here:", y);
 //ReferenceError: y is not defined
 
 //a block is defined by 2 curly braces(openning and closing) { } the let is block scoped while the var is function scoped.
+//variables declared with let cannot be used befor being defined even within the same block.
+//when we use a variable before defining it we simply get undefined
+//const is also block scope
+
+//global scope
+let globalVar = "Accessible everywhere!";
+console.log("Outside function:", globalVar);
+function creatingNewScope(x) {
+console.log("Access to global vars inside function." , globalVar);
+}
+creatingNewScope("some parameter");
+console.log("Still available:", globalVar);
+
+//imediatly invoked function expressions it is anonymous ie doesnt have a name and self executing.
+
+(function () {
+    console.log("IIFE!");
+}) ();                    // (); is to invoke the function created
+
+//arrow functions
+( () => {
+    console.log("run right away");
+} ) ();
+
+//Practice exercise 6.5
+let val = 1000;
+( () => {
+    let val = 500;           //local scope
+    console.log(val);
+} ) ();
+
+let end = ( function () {
+    let val = "Ferdinand";
+    return val
+} ) ();
+
+console.log(val);
+console.log(end);
+
+( (param) => {
+    console.log(`My name is ${val}`);
+} ) ("Ferdinand");
+
+function logRcursive (nr) {
+    console.log("Started function:", nr);
+    if (nr > 0) {
+        logRcursive (nr - 1);
+    } else {
+        console.log("done with recursive")
+    }
+    console.log("ended function:", nr)
+}
+
+logRcursive(3);
+
+//Practice exercise 6.6
+
+function factorial (number) {
+    if (number == 0) {
+        return 1;
+    } else {
+        return number * factorial(number - 1);
+    }
+}
+console.log(factorial(3));
+
+//nested funtions
+
+function doOuterFunctionStuff(nr) {
+    console.log("Outer function");
+    doInnerFunctionStuff(nr);
+    function doInnerFunctionStuff(x) {
+    console.log(x + 7);
+    console.log("I can access outer variables:", nr);
+    }
+}
+    doOuterFunctionStuff(2);
+
+//Practice exercise 6.7
+
+let start = 10;
+function countDown1(val) {
+    console.log(val);
+    if (val < 1) {
+        return;
+    }
+    return countDown1(val - 1);
+}
+
+countDown1(start);
+
+function countDown2(val) {
+    console.log(val);
+    if (val > 0) {
+        val--;
+        return countDown2(val);
+    }
+    return;
+}
+countDown2(start);
+
+//anonymous function
+
+//a function can be created without a name if it is being assigned to a variable.
+
+let functionVariable = function () {
+    console.log("Not so secret though.");
+};
+
+//Practice exercise 6.8
+let func = function (arg) {
+    console.log(arg);
+}
+func("i am a function in a variable");
+
+//function callbacks
+function doFlexibleStuff(executeStuff) {
+    executeStuff();
+    console.log("Inside doFlexibleStuffFunction.");
+}
+doFlexibleStuff(functionVariable)
+
+let youGotThis = function () {
+    console.log("You're doing really well, keep coding!");
+};
+setTimeout(youGotThis, 1000);     ///get executed once after 1sec
+// setInterval(youGotThis, 2000);   keeps executing every 2secs untill the program is killed
+
+//Chapter 6 projects
+
+/* Create a recursive function
+Create a recursive function that counts up to 10. Invoke the function
+with different start numbers as the arguments that are passed into
+the function. The function should run until the value is greater than
+10.*/
+
+//solution
+function recursive1(start) {
+    if (start < 10){
+        console.log(start);
+        recursive1(start + 1);
+    } 
+        return;
+}
+recursive1(1);
+
+/*Chapter projects
+Create a recursive function
+Create a recursive function that counts up to 10. Invoke the function
+with different start numbers as the arguments that are passed into
+the function. The function should run until the value is greater than
+10.
+Set timeout order
+Use the arrow format to create functions that output the values one
+and two to the console. Create a third function that outputs the value
+three to the console, and then invokes the first two functions.
+Create a fourth function that outputs the word four to the console
+and also use setTimeout() to invoke the first function immediately
+and then the third function.
+What does your output look like in the console? Try to get the
+console to output:
+Four
+Three
+One
+Two
+One */
+
+//solution
+
+const one = () => {console.log("one")}
+const two = () => {console.log("two")}
+const three = () => {
+    console.log("three") 
+    one() 
+    two()
+}
+const four = () => {
+    console.log("four");
+    setTimeout(one, 1000);
+    three();
+}
 
 
 
 
 
 
-
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
 
 
 
